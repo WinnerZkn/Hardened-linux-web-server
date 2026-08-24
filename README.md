@@ -1,8 +1,8 @@
-# 🔐 Hardened Linux Web Server on AWS
+# Hardened Linux Web Server on AWS
 
 > Deploying, securing, troubleshooting, and recovering an Ubuntu web server using AWS EC2, VPC networking, UFW, SSH, EBS, and Nginx.
 
-## 📌 Project Overview
+##  Project Overview
 
 This project demonstrates the deployment and security hardening of an Ubuntu Linux web server on Amazon Web Services (AWS).
 
@@ -12,7 +12,7 @@ The server was recovered by attaching its root EBS volume to a temporary recover
 
 ---
 
-## 🎯 Objectives
+##  Objectives
 
 - Deploy an Ubuntu Linux server on AWS EC2.
 - Understand the path of traffic through an AWS VPC.
@@ -28,7 +28,7 @@ The server was recovered by attaching its root EBS volume to a temporary recover
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 ```mermaid
 flowchart TD
@@ -67,7 +67,7 @@ This project demonstrates that passing an AWS network security layer does not gu
 
 ---
 
-## 🧰 Technologies & AWS Services
+##  Technologies & AWS Services
 
 | Category | Technology / Service |
 |---|---|
@@ -256,7 +256,7 @@ This confirmed that Nginx was actively serving HTTP requests.
 
 ---
 
-# 🔥 6. SSH Troubleshooting Incident
+#  6. SSH Troubleshooting Incident
 
 After deployment, SSH access failed with:
 
@@ -285,7 +285,7 @@ The investigation eventually moved inside the operating system.
 
 ---
 
-# 🚨 7. Root Cause
+#  7. Root Cause
 
 The old UFW configuration contained:
 
@@ -463,7 +463,7 @@ Server: nginx/1.24.0 (Ubuntu)
 
 ---
 
-# 🧠 10. Key Lessons Learned
+#  10. Key Lessons Learned
 
 ### 1. Security is layered
 
@@ -497,7 +497,7 @@ Knowing how to recover a failed system is just as important as knowing how to de
 
 ---
 
-# 📊 Final Architecture & Security Summary
+#  Final Architecture & Security Summary
 
 ```text
                     ┌─────────────────────┐
@@ -551,7 +551,7 @@ Knowing how to recover a failed system is just as important as knowing how to de
 
 ---
 
-# 🚀 Future Improvements
+#  Future Improvements
 
 Possible improvements for a production-oriented version of this project:
 
@@ -571,7 +571,7 @@ Possible improvements for a production-oriented version of this project:
 
 ---
 
-# 🏁 Project Outcome
+#  Project Outcome
 
 The project successfully delivered a hardened Ubuntu web server on AWS with:
 
@@ -616,7 +616,7 @@ The project successfully delivered a hardened Ubuntu web server on AWS with:
 
 ---
 
-## 👤 Author
+##  Author
 
 **Winner Nnakee**
 
