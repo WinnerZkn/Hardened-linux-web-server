@@ -316,7 +316,7 @@ This explains why the AWS networking configuration appeared correct while SSH co
 
 ---
 
-# 🛠️ 8. EBS Recovery Procedure
+#  8. EBS Recovery Procedure
 
 Because SSH and Session Manager were unavailable, the server's root filesystem was recovered offline.
 
