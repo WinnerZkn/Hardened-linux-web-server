@@ -261,7 +261,7 @@ This confirmed that Nginx was actively serving HTTP requests.
 After deployment, SSH access failed with:
 
 ```text
-ssh: connect to host <EC2_PUBLIC_IP> port 22: Connection timed out
+ssh: connect to host 13.52.j98.129 port 22: Connection timed out
 ```
 
 Instead of immediately changing random AWS settings, the connection path was investigated layer by layer.
