@@ -1,6 +1,6 @@
- Deployment Guide
+## Deployment Guide
 
-1. Launch EC2
+## 1. Launch EC2
 
 An Ubuntu Server 24.04 LTS EC2 instance was deployed in AWS.
 
@@ -19,12 +19,12 @@ The AWS Security Group allowed:
 - TCP 22 from the administrator's public IP
 - TCP 80 from the internet
 
- 3. Connect Using SSH
+## 3. Connect Using SSH
 
 ```
 ssh -i "hardened-linux-web-server.pem" ubuntu@<PUBLIC_IP> 
 ```
-4. Configure SSH Hardening
+## 4. Configure SSH Hardening
 
 The SSH configuration was verified to include:
 
@@ -32,7 +32,7 @@ The SSH configuration was verified to include:
 - PasswordAuthentication no
 - PubkeyAuthentication yes
 
-6. Configure UFW
+## 5. Configure UFW
 
 UFW was enabled with:
 
@@ -50,7 +50,7 @@ Verify:
 sudo ufw status verbose
 ```
 
-6. Install Nginx
+## 6. Install Nginx
 
 ```
 sudo apt update
@@ -64,7 +64,7 @@ Verify:
 sudo systemctl status nginx --no-pager
 ```
 
-7. Verify HTTP
+## 7. Verify HTTP
 
 ```
 curl -I http://localhost
@@ -74,7 +74,7 @@ Expected:
 
 HTTP/1.1 200 OK
 
-8. Verify SSH
+## 8. Verify SSH
 
 ```
 sudo ss -tlnp | grep ':22'
@@ -85,7 +85,7 @@ Expected:
 0.0.0.0:22
 [::]:22
 
-Final State
+## Final State
 
 The server successfully ran Ubuntu 24.04 LTS with:
 
