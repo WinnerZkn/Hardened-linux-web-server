@@ -5,7 +5,7 @@
 SSH access to the EC2 instance failed with:
 
 ```text
-ssh: connect to host <PUBLIC_IP> port 22: Connection timed out
+ssh: connect to host 13.52.98.129 port 22: Connection timed out
 ```
 
 ## Investigation
@@ -88,11 +88,3 @@ After the EBS recovery and UFW correction:
 
 A cloud firewall allowing traffic does not guarantee that the operating system will accept it.
 Troubleshooting must consider every security layer between the client and the service.
-
-```
-
-Commit it with:
-
-```text
-Add SSH troubleshooting documentation
-```
